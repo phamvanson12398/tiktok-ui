@@ -4,6 +4,7 @@
 :root{
     --default-layout-header-height :60px;
     --default-layout-width:1150px;
+    --text-color:green;
 }
 html{
     font-size: 62.5%;
@@ -21,4 +22,15 @@ body{
     font-variation-settings:
       "wdth" 100;
     line-height: 1.5;
+}
+
+a[href]{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
 }
