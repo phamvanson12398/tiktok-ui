@@ -1,5 +1,5 @@
 import HeaderCustom from "./Header";
-import Upload from "../../../pages/Upload";
+// import Upload from "../../../pages/Upload";
 function LayoutCustom({children}) {
     return ( 
         <>
