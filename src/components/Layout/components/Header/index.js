@@ -6,18 +6,23 @@ import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-s
 import Tippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
 import AccountItem from '../AcountItem';
-// import { useState } from 'react';
+import Button from '../Button';
+import { useState } from 'react';
 import {Wrapper as PopperWrapper} from '../Popper/index' 
+import { useEffect } from 'react';
 const cx = classNames.bind(styles)
 function Header() {
-    // const [SearchResult, setSearchResult]= useState([])
-    // setSearchResult([1,2,3])
+    const [SearchResult, setSearchResult]= useState([])
+    useEffect(()=>{
+        setSearchResult([1,2,3])
+    },[])
     return <header className={cx('wrapper')}>
         <div className={cx('inner')}>
            
             <img src={image.logo} alt='tiktok'/>
             <Tippy
-                visible="true"
+                visible={SearchResult.length >0}
+                interactive= "true"
                 render={attrs => (
                 
                     <div className={(cx("search-result"))} tabIndex="-1" {...attrs}>
@@ -46,7 +51,8 @@ function Header() {
                 </div>
             </Tippy>
             <div className={cx('action')}>
-
+                <Button text>Upload</Button>
+                <Button primary onClick={()=>{alert('oke')}}>Login</Button>
             </div>
         </div>
     </header>;
