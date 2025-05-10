@@ -1,12 +1,9 @@
 import classNames from "classnames/bind";
-import style from './Sibar.module.scss'
+import style from "./Sibar.module.scss";
 
-
-const cx = classNames.bind(style)
+const cx = classNames.bind(style);
 function Sidebar() {
-    return <div className={cx('wrapper')}>
-        sibar
-    </div>;
+  return <div className={cx("wrapper")}>sibar</div>;
 }
 
 export default Sidebar;

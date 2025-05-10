@@ -1,34 +1,45 @@
-@import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
-    --default-layout-header-height :60px;
-    --default-layout-width:1150px;
-    --text-color:green;
+:root {
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
+  --text-color: green;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100px;
-    font-style: normal;
-    line-height: 1.5;
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 1.7rem;
+  .tippy-box {
+    background-color: rgba(84, 84, 84, 0.92);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+  .tippy-arrow {
+    color: #333;
+  }
 }
 
-a[href]{
-    color: var(--text-color);
-    text-decoration: none;
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 input,
 button {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }

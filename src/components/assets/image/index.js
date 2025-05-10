@@ -1,4 +1,4 @@
 const image = {
-    logo : require('./logo.svg').default
-}
-export default image
+  logo: require("./logo.svg").default,
+};
+export default image;
